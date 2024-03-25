@@ -1,0 +1,367 @@
+body {
+  background-color: #f4f3ee;
+}
+.member-rebate-order {
+  max-width: 80%;
+  margin: 0 auto; /* 將左右邊距自動設為相等，即水平置中 */
+}
+
+.category {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #8a817c;
+}
+.category h2 {
+  background-color: #bcb8b1;
+  border: 1px solid #8a817c;
+  color: #f4f3ee;
+  cursor: pointer; /* 游標變成手指 */
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.category h2.active {
+  background-color: #7b302b;
+  color: #f4f3ee;
+  height: 2rem;
+}
+.info,
+.hierarchy,
+.revise,
+.rebate-detail,
+.order {
+  padding: 2rem;
+  position: relative; /* 設置相對定位 */
+  text-align: center;
+}
+
+/* 設置區塊的底線 */
+.info::after,
+.hierarchy::after,
+.revise::after {
+  content: "";
+  display: block;
+  width: 80%; /* 底線寬度為 80% */
+  height: 1px; /* 底線高度 */
+  background-color: #8a817c; /* 底線顏色 */
+  position: absolute;
+  bottom: 0; /* 與底部的距離 */
+  left: 50%; /* 置中 */
+  transform: translateX(-50%); /* 調整置中 */
+}
+.data-area h2.active {
+  background-color: #7b302b;
+  color: #f4f3ee;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  height: 1.5rem;
+  line-height: 1.5rem; /* 文字設定為元素的高度 */
+}
+.data-area {
+  background-color: #f4f3ee;
+}
+
+/* account-detail */
+/* account-detail */
+/* account-detail */
+.button,
+.account-detail {
+  border: 1px solid #7b302b;
+  background-color: #ffffff;
+  color: #7b302b;
+  width: 10rem;
+  height: 2rem;
+  margin: auto; /* 把按鈕置中 */
+  /* margin-bottom: 2rem;  */
+  /* 將底部距離設為3rem */
+  margin-top: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.selects {
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0rem;
+}
+.select_city,
+.select_area {
+  width: 50%;
+  height: 100%;
+}
+#select_city,
+#select_area {
+  width: 100%;
+  height: 100%;
+}
+
+.select_city {
+  padding: 0 10px 0 0;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem 0 0 0;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-weight: bold;
+  text-align: start;
+}
+h4 {
+  text-align: start;
+  margin-top: 0.5rem;
+  /* white-space: nowrap;  */
+  /* 不換行 */
+}
+.rebate-item {
+  display: flex;
+  align-items: center; /* 垂直置中 */
+  width: 100%;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.rebate-item p,
+.account-detail {
+  /* width: 50%; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.every-order {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: #bcb8b1 1px solid;
+}
+
+.buy-item {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.rebate-item-sub {
+  width: 80%;
+}
+.add-title {
+  display: none;
+}
+.add-button {
+  display: none;
+}
+.reduce {
+  white-space: nowrap;
+}
+
+/* add */
+/* add */
+/* add */
+.add {
+  display: none;
+  /* justify-content:space-between; */
+  justify-content: center;
+}
+.buy-title {
+  display: none;
+}
+.buy-title2 {
+  display: flex;
+}
+.overall-item {
+  display: flex;
+  justify-content: start;
+  width: 16%;
+}
+.overall-item2 {
+  display: flex;
+  justify-content: start;
+  width: 50%;
+}
+.order-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.distinguish-screen-l {
+  display: flex;
+}
+
+#birthday {
+  margin-bottom: 0.5rem;
+}
+
+#a-logout {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.btn-logout {
+  background-color: #7b302b;
+  color: #f4f3ee;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 20%; /* 寬度是相對於父層 */
+  height: 35px;
+  border-radius: 10px; /* 設定圓角 */
+  display: flex; /* 使用 flexbox */
+  align-items: center; /* 將文字垂直居中 */
+  justify-content: center; /* 水平置中 */
+  margin: 1rem 0; /* 調整上邊距 */
+}
+
+.btn-logout:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: #f4f3ee;
+}
+
+@media (577px <= width) {
+  /* add */
+  /* add */
+  /* add */
+  .add {
+    /* display: flex; */
+    display: block;
+    margin: auto; /* 把按鈕置中 */
+  }
+  .add-title {
+    display: flex;
+    justify-content: space-around;
+  }
+  .reduce {
+    display: none;
+  }
+
+  .overall {
+    display: flex;
+  }
+  .rebate-item {
+    display: flex;
+    align-items: center; /* 垂直置中 */
+    width: 100%;
+  }
+  .rebate-item-sub {
+    justify-content: center;
+  }
+  .rebate-item-sub h4 {
+    white-space: nowrap;
+  }
+  .member-section {
+    display: flex;
+    width: 80%;
+    margin: 0 auto; /* 將左右邊距自動設為相等，即水平置中 */
+    /* align-items: center; */
+  }
+  .member-section > div {
+    flex: 1;
+  }
+
+  .info,
+  .hierarchy,
+  .revise {
+    padding: 1.5rem;
+  }
+
+  .revise {
+    margin-top: -40px; /* 修改密碼區域位置往上移 */
+  }
+  /* 區塊底線取消 */
+  .info::after,
+  .hierarchy::after,
+  .revise::after {
+    display: none;
+  }
+  .buy-item h4 {
+    white-space: wrap; /* 不換行 */
+    width: 10rem;
+    text-align: center;
+  }
+  .order .active {
+    display: none;
+  }
+  .every-order {
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+  .add-button {
+    display: flex;
+    border: 1px solid #7b302b;
+    background-color: #ffffff;
+    color: #7b302b;
+    width: 8rem;
+    height: 2rem;
+    margin: auto; /* 把按鈕置中 */
+    align-items: center;
+    justify-content: center;
+  }
+  .overall-item {
+    display: flex;
+    justify-content: center;
+    width: 16%;
+  }
+  .overall-item2 {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+  }
+  .overall-sub {
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex: 1 1 0; */
+    width: 50%;
+  }
+  .overall-sub > * {
+    flex: 1 1 0;
+  }
+  /* .overall-sub h4{
+    flex-grow: ;
+  } */
+  /* .NT{
+    display: flex;
+  } */
+  .add-item {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .buy-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .buy-title2 {
+    display: flex;
+    /* width: 100%; */
+    justify-content: end;
+    align-items: center;
+  }
+  .buy-title2 p {
+    white-space: nowrap;
+  }
+  .distinguish-screen-l {
+    display: flex;
+  }
+  .distinguish-screen-s {
+    display: none;
+  }
+  .add-item:first-child {
+    margin-right: 15rem;
+  }
+}

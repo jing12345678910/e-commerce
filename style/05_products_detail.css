@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f3ee;
+}
+
+.products-main {
+  width: 90vw;
+  background-color: #f4f3ee;
+  margin: 0 auto;
+}
+
+.mode-icon {
+  width: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.search-function div {
+  margin: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.products-content {
+  width: 100%;
+}
+
+.product {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.product img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.product-text p {
+  margin: 0;
+}
+
+.item-name {
+  text-decoration: none;
+  color: black;
+}
+
+.product-list {
+  display: none;
+}
+
+.favorite {
+  width: 1rem;
+}
+
+.main_class {
+  margin: 0.5rem;
+}
+
+li a:hover {
+  color: #7b302b;
+  font-weight: 600;
+}
+
+select {
+  width: 100%;
+  height: 1.5rem;
+  border: 1px solid #7b302b;
+}
+
+option {
+  color: #7b302b;
+}
+
+.desc {
+  padding: 5px 0;
+  border-top: 1px solid #000;
+}
+
+.btn-add-carts {
+    border: 0px;
+    background-color: #7b302b;
+    color: #f4f3ee;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+
+  .p-desc {
+    font-size: 0.8rem;
+  }
+
+@media screen and (min-width: 768px) {
+
+  .products-search {
+    width: 92%;
+    /* 無作用 */
+    /* width: calc(100% - ((80% -(80% * 90%)))); */
+  }
+
+  .list-mode {
+    display: none;
+  }
+
+  .product-list {
+    display: block;
+    width: 20%;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  ul {
+    padding: 0;
+    padding-right: 10px;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    margin: 5px 0;
+  }
+
+  .product-detail {
+    width: 80%;
+  }
+
+  .product-detail p {
+    font-size: 1.2rem;
+  }
+
+  .what02 {
+    width: 90%;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .product img {
+    width: 50%;
+    margin: 20px;
+    padding: 0 10px;
+  }
+
+  .product-desc img {
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+  }
+
+  .product-desc {
+    display: flex;
+  }
+  
+  .all-desc {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .favorite img {
+    margin: 0;
+    width: 100%;
+  }
+}

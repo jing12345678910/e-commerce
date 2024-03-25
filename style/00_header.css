@@ -1,0 +1,397 @@
+body {
+  position: relative;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background-color: #f4f3ee;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  z-index: 2000;
+}
+
+/* 手機版logo外層容器 */
+.header-row {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 5;
+}
+
+.header-logo-mobile {
+  margin: 0 20px;
+  height: 60px;
+}
+
+.header-logo-tab,
+.header-row2 {
+  display: none;
+}
+
+.header-right {
+  /* 原本設置felx，導致首頁LOGO被擋住無法點選，改成inline-flex即可點選到LOGO */
+  display: inline-flex;
+  justify-content: end;
+  position: sticky;
+  height: 60px;
+  left: 100vw;
+  bottom: 10px;
+  margin: 0 20px;
+  z-index: 100;
+  padding: 5px 0;
+}
+
+.header-icon {
+  display: inline-block;
+  position: relative;
+  height: 25px;
+  padding: 10px;
+  margin: 5px 0;
+  color: #7b3027;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+/* 漢堡選單 */
+.hamburger-list {
+  width: 20rem;
+  position: fixed;
+  flex-direction: column;
+  right: -15%;
+  z-index: 20;
+  background-color: #f4f3ee;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  opacity: 0;
+}
+
+.hamburger-list.is-active {
+  display: flex;
+}
+
+.btn-special {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 17rem;
+  height: 45px;
+  border: 0px;
+  background-color: #7b3027;
+  margin: 10px auto;
+}
+
+.btn-special a {
+  text-decoration: none;
+  color: #f4f3ee;
+  font-size: 1rem;
+  letter-spacing: 20%;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 17rem;
+  height: 45px;
+  background-color: #fff;
+  margin: 10px auto;
+  border: 0px;
+  border-bottom: 1px solid #000;
+}
+
+.btn-list a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 20%;
+}
+
+.hamburger-list-bottom {
+  background-color: #bcb8b1;
+  border-top: 2px solid rgba(138, 129, 124, 0.25);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  height: 50px;
+}
+
+.hamburger-list-bottom img {
+  height: 25px;
+  padding: 5px 10px;
+}
+
+.hamburger-list-bottom p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: rgba(138, 129, 124, 0.75);
+  align-items: center;
+}
+
+.t {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.t a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.hamburger-list-bottom div {
+  align-items: center;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+.share-animation {
+  animation-name: share-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes share-animation {
+  from {
+    right: -15%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+    z-index: 20;
+  }
+}
+
+.share-animation-back {
+  animation-name: share-animation002;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes share-animation002 {
+  from {
+    right: 0%;
+    opacity: 1;
+    z-index: 20;
+  }
+  to {
+    right: -15%;
+    opacity: 0;
+  }
+}
+
+/* 購物車選單 */
+.cart-list {
+  position: fixed;
+  width: 25rem;
+  top: 0px;
+  right: -90%;
+  z-index: 1000;
+  flex-direction: column;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  /* display: none; */
+  opacity: 1;
+  background-color: #fff;
+}
+
+.btn-close {
+  float: right;
+  border: 0;
+  background-color: #fff;
+  margin: 20px 30px 10px;
+}
+
+.products-list {
+  border-top: 1px solid #7b3027;
+  border-bottom: 1px solid #7b3027;
+  margin: 10px 30px;
+  padding: 20px;
+}
+
+.carts-product {
+  display: flex;
+  margin: 10px 0 20px 0;
+}
+
+.carts-product img {
+  width: 30%;
+}
+
+.product-details {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.product-details p {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.list-container {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+}
+
+.a-checkout {
+  margin: 20px auto 30px auto;
+}
+
+.btn-checkout {
+  border: 0px;
+  box-sizing: border-box;
+  background-color: #7b3027;
+  color: #f4f3ee;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 20px auto 30px auto;
+}
+
+.cart-animation {
+  animation-name: cart-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cart-animation {
+  from {
+    right: -90%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.cart-animation-back {
+  animation-name: cart-animation-back;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* 搜尋框 */
+.search-container {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  height: 50px;
+  width: 220px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.search-form {
+  margin: 0;
+  padding: 0;
+  width: 210px;
+}
+
+.search-input {
+  height: 100%;
+  width: 150px;
+  height: 45px;
+  border: 0;
+  padding: 15px;
+  font-size: 16px;
+  transition: width 1.2s reverse; /* 此行 */
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.btn-search {
+  position: absolute; /* 此行 */
+  /* inset四項為top right bottom left的位置寫在一起，auto等於不設置 */
+  inset: 0 auto auto 0; /* 此行 */
+  width: 50px;
+  height: 100%;
+  transition: transform 1.2s reverse; /* 此行 */
+  border: 0px;
+  left: 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #f4f3ee;
+}
+/* start */
+.search-container.active .btn-search {
+  transform: translateX(160px);
+}
+
+.search-container.active .search-input {
+  animation-name: widthdiv;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.search-container.active {
+  animation-name: Bigwidthdiv;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+@keyframes widthdiv {
+  from {
+    width: 0;
+  }
+  to {
+    width: 235px;
+  }
+}
+@keyframes Bigwidthdiv {
+  from {
+    width: 90px;
+  }
+  to {
+    width: 275px;
+  }
+}
+
+/* end */
+
+@keyframes cart-animation-back {
+  from {
+    right: 0;
+    opacity: 1;
+  }
+  to {
+    right: -90%;
+    opacity: 0;
+  }
+}
+
+
+@media screen and (min-width: 36rem) {
+  header {
+    height: 120px;
+  }
+  .header-logo {
+    margin: 0 auto;
+  }
+  .header-logo-mobile,
+  .hamburger,
+  .hamburger-list,
+  .hamburger-list.is-active {
+    display: none;
+  }
+  .header-logo-tab,
+  .header-row2 {
+    display: flex;
+  }
+  .header-row2 {
+    margin: 15px auto;
+    justify-content: center;
+  }
+
+  .header-row2 a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    color: #7b3027;
+  }
+}

@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* height: 100vh; */
+  background-color: #f4f3ee;
+}
+
+.login-container {
+  background-color: #f4f3ee;
+  padding: 20px;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /* text-align: start; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  margin: 0 auto;
+  line-height: 2rem; /* 設定每一列的高度 */
+  height: 50vh;
+  width: 300px;
+  justify-content: center;
+}
+.login-or-new {
+  display: flex;
+  justify-content: space-around;
+}
+.login-or-new h2 {
+  font-weight: bold;
+}
+a {
+  text-decoration: none; /* 移除超連結的底線樣式 */
+  color: inherit; /* 使用父元素的文字顏色 */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.input-container label {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+.input-line {
+  border-bottom: 1px solid #808080;
+  width: 100%;
+  margin-bottom: 10px;
+  /* align-items: start; */
+}
+
+input {
+  border: none;
+  outline: none;
+  /* width: 100%; */
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #f4f4f4; /* 設定背景顏色 */
+}
+
+button {
+  background-color: #7b302b;
+  color: #f4f3ee;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* 寬度是相對於父層 */
+  height: 2rem;
+  border-radius: 10px; /* 設定圓角 */
+  display: flex; /* 使用 flexbox */
+  align-items: center; /* 將文字垂直居中 */
+  justify-content: center; /* 水平置中 */
+  margin: 10px 0; /* 調整上邊距 */
+}
+
+button:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: #f4f3ee;
+}
+.other-methods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 將元素垂直居中 */
+  width: 100%; /* 寬度是相對於父層 */
+}
+
+.other-methods p {
+  margin-left: auto;
+  margin: 0; /* 清除可能存在的其他 margin */
+}
+.social-icon {
+  display: flex;
+}
+.social-icon img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+#loginMessage {
+  margin-top: 10px;
+  color: #dc3545;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.form-agree {
+  width: 100%;
+  justify-content: space-between;
+}

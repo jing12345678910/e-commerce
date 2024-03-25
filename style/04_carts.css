@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f3ee;
+}
+
+p {
+  margin: 0;
+}
+
+.cart-option {
+  border: 1px solid #8A817C;
+  color: #f4f3ee;
+  background-color: #7B302B;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.wishlist-option {
+  border: 1px solid #8A817C;
+  color: #f4f3ee;
+  background-color: #BCB8B1;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.cart-product {
+  position: relative;
+  padding: 20px 0;
+  
+}
+
+.cart-main {
+  width: 90vw;
+  margin: 100px auto;
+}
+
+.cart-content {
+  width: 100%;
+}
+
+.product-info {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.product-img {
+  max-width: 30%;
+}
+
+.cart-content {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.product-details {
+  width: 70%;
+  padding: 20px;
+  font-weight: 600;
+}
+
+select {
+  width: 100px;
+}
+
+.next-time-btn, .delete-btn, .coupon-btn, .choose-btn, .next-btn {
+  border: 1px solid #7B302B;
+  padding: 5px 30px;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #7B302B;
+  font-size: 1rem;
+}
+
+.delete-btn {
+  position: absolute;
+  border: none;
+  right: 0;
+  top: 10px;
+}
+
+.coupon {
+  text-align: center;
+  margin: 30px;
+}
+
+.carts-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+
+.coupon p {
+  color: #7B302B;
+  font-size: 0.85rem;
+}
+
+.payment-delivery {
+  background-color: #fff;
+}
+
+.payment-method, .delivery-method {
+  padding: 30px 50px 0px 50px;
+}
+
+.store-option {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  color: #7B302B;
+}
+
+.reminder {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0 50px 0;
+}
+
+.sum {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.shipping-reminder {
+  text-align: center;
+  color: #7B302B;
+}
+
+.btn-next {
+  background-color: #7B302B;
+  margin: 0 auto;
+}
+
+.next {
+  text-align:center
+}
+
+.next-btn {
+  background-color: #7B302B;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.next-btn a {
+  color: #f4f3ee;
+}
+
+/* 大於768px */
+@media screen and (min-width: 768px) {
+  
+}
